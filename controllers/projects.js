@@ -30,9 +30,10 @@ async function getAllProjects() {
 */
 async function getProjectsById(id) {
   let projects = {};
-
+  const data = {};
   const SUCCESS_MESSAGE = 'Successfully retreived project by Id';
   const ERROR_MESSAGE = 'Error while retreiving project by Id';
+  const INVALID_PARAMETER = 'Invalid Parameter';
   try {
     const projectId = parseInt(id, 10);
     try {
@@ -41,16 +42,15 @@ async function getProjectsById(id) {
           id: projectId,
         },
       });
-      projects.success = SUCCESS_MESSAGE;
+      data.data = projects;
+      data.success = SUCCESS_MESSAGE;
     } catch (err) {
       // log the error
-      projects.error = ERROR_MESSAGE;
+      data.error = ERROR_MESSAGE;
     }
   } catch (err) {
     // log the error
-    projects = {
-      error: 'Invalid parameter',
-    };
+    data.error = INVALID_PARAMETER;
   }
   return projects;
 }
