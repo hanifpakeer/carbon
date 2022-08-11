@@ -27,9 +27,11 @@ POST METHOD
    {
        sucess: 'SUCCESS MESSAGE' || error: 'ERROR MESSAGE'
    }
+   
+   
 GET METHOD
  
-    Response :
+  RES :
 
     {
         data: {
