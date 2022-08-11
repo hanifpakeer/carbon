@@ -17,7 +17,7 @@ const Projects = sequelize.define('projects', {
   },
 
   // Name of Column #2: name
-  project_name: { type: Sequelize.STRING, allowNull: false, unique: true },
+  project_name: { type: Sequelize.STRING, allowNull: false },
 
   // Column: Timestamps
   createdAt: Sequelize.DATE,

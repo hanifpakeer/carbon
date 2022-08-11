@@ -10,3 +10,30 @@ DB_USERNAME=""
 DB_PASSWORD=""
 DB_DIALECT=""
 DB_HOST=""
+
+POST METHOD
+
+ REQ :
+
+    data: {
+        key: value,
+        key: value
+    }
+
+    This is how it should be sent across the project
+
+ RES :
+
+   {
+       sucess: 'SUCCESS MESSAGE' || error: 'ERROR MESSAGE'
+   }
+GET METHOD
+ 
+    Response :
+
+    {
+        data: {
+            key: value
+        },
+        success : 'SUCCESS MESSAGE' || error : 'ERROR MESSAGE'
+    }

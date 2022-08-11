@@ -17,6 +17,7 @@ const accessLogStream = rfs.createStream('access.log', {
 
 // Router initialiation
 const localizeRouter = require('./routes/lang-core');
+const projectsRouter = require('./routes/projects');
 
 const app = express();
 
@@ -31,6 +32,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/v1/localize', localizeRouter);
+app.use('/v1/projects', projectsRouter);
 
 // Every imported model will get creted by this sync operation
 Projects.sync();
