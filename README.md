@@ -5,7 +5,7 @@ To run this project:
 
 Add these variables in .env file
 
-DB_NAME=""
+DB_NAME="" (This DB should have already been created manually)
 DB_USERNAME=""
 DB_PASSWORD=""
 DB_DIALECT=""
