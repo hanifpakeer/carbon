@@ -39,3 +39,6 @@ GET METHOD
         },
         success : 'SUCCESS MESSAGE' || error : 'ERROR MESSAGE'
     }
+    
+    
+ To get API related info check this postman workspace : https://www.postman.com/tvldev/workspace/language-barrier
